@@ -81,8 +81,10 @@ public class GameFrame extends JFrame {
         int option = JOptionPane.showOptionDialog(null, "What game mode do you want to play?", "Game mode",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[1]);
         if(option == 1) {
+            this.setTitle("Tic Tac Toe - Easy");
             return "easy";
         }
+        this.setTitle("Tic Tac Toe - PvP");
         return "pvp";
     }
 
